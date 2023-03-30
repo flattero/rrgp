@@ -1,0 +1,165 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f9f9;
+
+  animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+          }
+
+#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#info-section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#info-section h1 {
+  font-size: 3em;
+  color: #0B2D5D;
+}
+
+#info-section p {
+  font-size: 1.5em;
+}
+
+#info-section ul {
+  margin: 0 auto;
+  text-align: left;
+  max-width: 500px;
+}
+
+#image-section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+}
+
+.thumbnail {
+  display: inline-block;
+  margin: 10px;
+  width: 100px;
+  height: 130px;
+  position: relative;
+  z-index: 1;
+
+}
+
+#selected-image-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0,);
+  display: none;
+  z-index: 999;
+  justify-content: right;
+  align-items: center;
+  padding: -10%;
+}
+
+#selected-image {
+  max-width: 95%;
+  max-height: 95%;
+  margin: 10%;
+  border: 2px solid #0B2D5D;
+}
+
+
+
+.thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+
+.selected {
+  border: 2px solid red;
+}
+
+
+.thumbnail:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+
+
+.ul{
+  align: center;
+  line-height: 1.7; /* increase the line spacing */
+}
+
+h2, li {
+  color: #414042;
+}
+
+li {
+  margin-bottom: 10px; /* add some margin between li items */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 2em 0;
+  font-size: 1.2em;
+}
+
+th {
+  text-align: left;
+  background-color: #0B2D5D;
+  color: #F1ECE1;
+  padding: 1em;
+  font-weight: bold;
+}
+
+td {
+  padding: 1em;
+  border: 1px solid #ddd;
+}
+
+td:first-child {
+  width: 20%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+td:nth-child(2) {
+  width: 50%;
+}
+
+td:nth-child(3) {
+  width: 30%;
+}
+
+
+tr:hover td {
+  background-color: #F1ECE1;
+  color: #0B2D5D;
+}
